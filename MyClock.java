@@ -32,16 +32,16 @@ public class MyClock extends Application{
 		timeline.setCycleCount(Timeline.INDEFINITE);
 		timeline.play();
 		clock.setStyle("-fx-background-color:linear-gradient(to top,#00ffff,#54FF9F)");
-	    primary.setTitle("My Clock");
-	    primary.setScene(scene);
-	    primary.centerOnScreen();
-	    primary.show();
+	        primary.setTitle("My Clock");
+	        primary.setScene(scene);
+	        primary.centerOnScreen();
+	        primary.show();
 	   
 
 	}
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-    Application.launch(args);
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+                Application.launch(args);
 	}
 
 }
@@ -54,14 +54,14 @@ class Clock extends StackPane{
 	private int sec;
 	private boolean b = false ;
 	private Label l1 = new Label(hour+":"+min+":"+sec+"");
-	private Font font = new Font("»ªÎÄÑÅºÚ",40);
+	private Font font = new Font("åæ–‡é›…é»‘",40);
 	public Clock() {
 	Date date = new Date();
 	hour = date.getHours();
-    min = date.getMinutes();
-    sec = date.getSeconds();
-    this.getChildren().add(l1);
-    this.setAlignment(Pos.CENTER);
+        min = date.getMinutes();
+        sec = date.getSeconds();
+        this.getChildren().add(l1);
+        this.setAlignment(Pos.CENTER);
 	}
 	public int getHour(boolean b)
 	{
@@ -98,8 +98,8 @@ class Clock extends StackPane{
 	{
 		Date date = new Date();
 		hour = date.getHours();
-	    min = date.getMinutes();
-	    sec = date.getSeconds();
+	        min = date.getMinutes();
+	        sec = date.getSeconds();
 		l1.setText(hour+":"+min+":"+sec+"");
 		l1.setFont(font);
 	}
