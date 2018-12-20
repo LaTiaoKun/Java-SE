@@ -23,10 +23,10 @@ public class Project9Client extends Application {
 
 	int Order  =  0;
 	boolean win = false;
-    Integer yourpoint = 0;
-    int oppopoint = 0;
-    int yourping = 0;
-    int oppoping = 0;
+        Integer yourpoint = 0;
+        int oppopoint = 0;
+        int yourping = 0;
+        int oppoping = 0;
 	Socket socket ;
 	BorderPane pane = new BorderPane();
 	 HBox tbox = addHBoxTop();
@@ -36,12 +36,12 @@ public class Project9Client extends Application {
 	DataOutputStream out ;
 	DataInputStream in;
     public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		 Application.launch(args);		
 	}
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		 socket = new Socket("127.0.0.1",8000);
 		 out = new DataOutputStream(socket.getOutputStream());
 		 in = new DataInputStream(socket.getInputStream());
@@ -66,13 +66,13 @@ public class Project9Client extends Application {
 		l3.setTextFill(Color.web("#FF1493"));
 		l3.setFont(new Font("", 20));
 		HBox box1 =new HBox();
-		Image  i1 =new Image("Project9/Ê¯Í·.png");
+		Image  i1 =new Image("Project9/çŸ³å¤´.png");
 		ImageView ia = new ImageView(i1);
 		Button btn1 = new Button("", ia);
-		Image  i2 =new Image("Project9/¼ôµ¶.png");
+		Image  i2 =new Image("Project9/å‰ªåˆ€.png");
 		ImageView ib = new ImageView(i2);
 		Button btn2 = new Button("", ib);
-		Image  i3 =new Image("Project9/²¼.png");
+		Image  i3 =new Image("Project9/å¸ƒ.png");
 		ImageView ic = new ImageView(i3);
 		Button btn3 = new Button("", ic);
 		box1.setPadding (new Insets(10,100,10,100));
@@ -103,7 +103,7 @@ public class Project9Client extends Application {
 		l3.setTextFill(Color.web("#00BFFF"));
 		l3.setFont(new Font("", 20));
 		HBox box1 =new HBox();
-		Image  i1 =new Image("Project9/Ê¯Í·.png");
+		Image  i1 =new Image("Project9/çŸ³å¤´.png");
 		ImageView ia = new ImageView(i1);
 		Button btn1 = new Button("", ia);
 		btn1.setOnAction(e->{
@@ -134,13 +134,13 @@ public class Project9Client extends Application {
 			    pane.setTop(tbox);
 			    pane.setBottom(bbox);
 			} catch (IOException e1) {
-				// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 				e1.printStackTrace();
 			}
 		});
 		
 		
-		Image  i2 =new Image("Project9/¼ôµ¶.png");
+		Image  i2 =new Image("Project9/å‰ªåˆ€.png");
 		ImageView ib = new ImageView(i2);
 		Button btn2 = new Button("", ib);
 		btn2.setOnAction(e->{
@@ -170,11 +170,11 @@ public class Project9Client extends Application {
 			    pane.setTop(tbox);
 			    pane.setBottom(bbox);
 			} catch (IOException e1) {
-				// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 				e1.printStackTrace();
 			}
 		});
-		Image  i3 =new Image("Project9/²¼.png");
+		Image  i3 =new Image("Project9/å¸ƒ.png");
 		ImageView ic = new ImageView(i3);
 		Button btn3 = new Button("", ic);
 		btn3.setOnAction(e->{
@@ -202,7 +202,7 @@ public class Project9Client extends Application {
 			    pane.setTop(tbox);
 			    pane.setBottom(bbox);
 			} catch (IOException e1) {
-				// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 				e1.printStackTrace();
 			}
 		});
